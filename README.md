@@ -12,6 +12,10 @@ _A website that calculates the users age on various planets._
 
 * _Clone repository_
 
+## Known Bugs
+
+* _Does not account for Leap Years_
+
 ## Technologies Used
 * _Javascript_
 * _[Bootstrap](http://getbootstrap.com/getting-started/)_
