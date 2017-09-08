@@ -1,6 +1,7 @@
 import {GalacticAge} from './../js/galactic-age-calculator.js'
 
-const newAge = new GalacticAge(new Date(1993, 11, 1))
+const newAge = new GalacticAge(new Date(1993, 11, 1), "male");
+const twoAge = new GalacticAge(new Date(1997, 11, 2), "female");
 
 describe('GalacticAge', function() {
 
@@ -26,5 +27,25 @@ describe('GalacticAge', function() {
 
   it('should return an age in jupiter years', function() {
     expect(newAge.ageInJupiterYears()).toEqual(Math.floor(23/11.86));
+  });
+
+  it('should return average life expectancy in earth years', function() {
+    expect(newAge.lifeExpectancyOnEarth()).toEqual(76.9);
+  });
+
+  it('should return average life expectancy in mercury years', function() {
+    expect(twoAge.lifeExpectancyOnMercury()).toEqual(Math.floor(81.6*(365/88)));
+  });
+
+  it('should return average life expectancy in venus years', function() {
+    expect(twoAge.lifeExpectancyOnVenus()).toEqual(Math.floor(81.6*(365/225)));
+  });
+
+  it('should return average life expectancy in mars years', function() {
+    expect(newAge.lifeExpectancyOnMars()).toEqual(Math.floor(76.9/1.88));
+  });
+
+  it('should return average life expectancy in jupiter years', function() {
+    expect(newAge.lifeExpectancyOnJupiter()).toEqual(Math.floor(76.9/11.86));
   });
 });
