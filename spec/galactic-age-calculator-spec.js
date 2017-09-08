@@ -19,4 +19,12 @@ describe('GalacticAge', function() {
   it('should return an age in venus years', function() {
     expect(newAge.ageInVenusYears()).toEqual(Math.floor(23/.62));
   });
+
+  it('should return an age in mars years', function() {
+    expect(newAge.ageInMarsYears()).toEqual(Math.floor(23/1.88));
+  });
+
+  it('should return an age in jupiter years', function() {
+    expect(newAge.ageInJupiterYears()).toEqual(Math.floor(23/11.86));
+  });
 });

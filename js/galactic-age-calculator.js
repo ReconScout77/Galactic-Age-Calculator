@@ -19,4 +19,12 @@ export class GalacticAge {
   ageInVenusYears() {
     return Math.floor(this.ageInEarthYears() * (365/225));
   }
+
+  ageInMarsYears() {
+    return Math.floor(this.ageInEarthYears() * (365/687));
+  }
+
+  ageInJupiterYears() {
+    return Math.floor(this.ageInEarthYears() * (365/4333));
+  }
 }
