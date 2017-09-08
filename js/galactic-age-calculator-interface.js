@@ -10,15 +10,15 @@ $(function() {
 
 
     if (chosenPlanet === "Mercury") {
-    $('#result').text(`You are ${userDay.ageInMercuryYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnMercury()} years! How exciting!`);
+    $('#result').text(`You are ${userDay.ageInMercuryYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnMercury()} years! ${userDay.olderThanLifeExpectancyMercury()}`);
     } else if (chosenPlanet === "Venus") {
-      $('#result').text(`You are ${userDay.ageInVenusYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnVenus()} years! How exciting!`);
+      $('#result').text(`You are ${userDay.ageInVenusYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnVenus()} years! ${userDay.olderThanLifeExpectancyVenus()}`);
     } else if (chosenPlanet === "Mars") {
-      $('#result').text(`You are ${userDay.ageInMarsYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnMars()} years! How exciting!`);
+      $('#result').text(`You are ${userDay.ageInMarsYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnMars()} years! ${userDay.olderThanLifeExpectancyMars()}`);
     } else if (chosenPlanet === "Jupiter") {
-      $('#result').text(`You are ${userDay.ageInJupiterYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnJupiter()} years! How exciting!`);
+      $('#result').text(`You are ${userDay.ageInJupiterYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnJupiter()} years! ${userDay.olderThanLifeExpectancyJupiter()}`);
     } else {
-      $('#result').text(`You are ${userDay.ageInEarthYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnEarth()} years! How exciting!`);
+      $('#result').text(`You are ${userDay.ageInEarthYears()} years old on ${chosenPlanet} years! Incidentally this means that your average life expectancy is ${userDay.lifeExpectancyOnEarth()} years! ${userDay.olderThanLifeExpectancyEarth()}`);
     }
   });
 });

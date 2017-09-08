@@ -48,4 +48,15 @@ describe('GalacticAge', function() {
   it('should return average life expectancy in jupiter years', function() {
     expect(newAge.lifeExpectancyOnJupiter()).toEqual(Math.floor(76.9/11.86));
   });
+
+  it('should return a congratulatory message if the user has surpassed their life expectancy', function() {
+    let oldAge = new GalacticAge(new Date(1920, 3, 6), "female");
+    expect(oldAge.olderThanLifeExpectancyEarth()).toEqual("You survived past your life expectancy! Congratulations!");
+    expect(oldAge.olderThanLifeExpectancyMercury()).toEqual("You survived past your life expectancy! Congratulations!");
+    expect(oldAge.olderThanLifeExpectancyVenus()).toEqual("You survived past your life expectancy! Congratulations!");
+    expect(oldAge.olderThanLifeExpectancyMars()).toEqual("You survived past your life expectancy! Congratulations!");
+    expect(oldAge.olderThanLifeExpectancyJupiter()).toEqual("You survived past your life expectancy! Congratulations!");
+    expect(newAge.olderThanLifeExpectancyMars()).toEqual("How exciting!");
+    expect(twoAge.olderThanLifeExpectancyVenus()).toEqual("How exciting!");
+  });
 });

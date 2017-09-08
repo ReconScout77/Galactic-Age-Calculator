@@ -68,4 +68,44 @@ export class GalacticAge {
       return Math.floor(76.9 * (365/4333));
     }
   }
+
+  olderThanLifeExpectancyEarth() {
+    if(this.ageInEarthYears() >= this.lifeExpectancyOnEarth()) {
+      return "You survived past your life expectancy! Congratulations!";
+    } else {
+      return "How exciting!";
+    }
+  }
+
+  olderThanLifeExpectancyMercury() {
+    if(this.ageInMercuryYears() >= this.lifeExpectancyOnMercury()) {
+      return "You survived past your life expectancy! Congratulations!";
+    } else {
+      return "How exciting!";
+    }
+  }
+
+  olderThanLifeExpectancyVenus() {
+    if(this.ageInVenusYears() >= this.lifeExpectancyOnVenus()) {
+      return "You survived past your life expectancy! Congratulations!";
+    } else {
+      return "How exciting!";
+    }
+  }
+
+  olderThanLifeExpectancyMars() {
+    if(this.ageInMarsYears() >= this.lifeExpectancyOnMars()) {
+      return "You survived past your life expectancy! Congratulations!";
+    } else {
+      return "How exciting!";
+    }
+  }
+
+  olderThanLifeExpectancyJupiter() {
+    if(this.ageInJupiterYears() >= this.lifeExpectancyOnJupiter()) {
+      return "You survived past your life expectancy! Congratulations!";
+    } else {
+      return "How exciting!";
+    }
+  }
 }
