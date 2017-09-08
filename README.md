@@ -12,6 +12,11 @@ _A website that calculates the users age on various planets._
 
 * _Clone repository_
 
+## Potential Future Updates
+
+* _Age in animal years (on each planet too!)_
+* _Leap Year support_
+
 ## Known Bugs
 
 * _Does not account for Leap Years_
