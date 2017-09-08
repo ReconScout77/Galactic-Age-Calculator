@@ -1,6 +1,7 @@
 export class GalacticAge {
   constructor(birthday) {
     this.birthday = birthday;
+    this.today = Date.now();
   }
 
   ageInEarthYears() {
@@ -8,7 +9,14 @@ export class GalacticAge {
   }
 
   ageInSeconds() {
-    var today = Date.now();
-    return Math.floor((today - this.birthday) / 1000);
+    return Math.floor((this.today - this.birthday) / 1000);
+  }
+
+  ageInMercuryYears() {
+    return Math.floor(this.ageInEarthYears() * (365/88));
+  }
+
+  ageInVenusYears() {
+    return Math.floor(this.ageInEarthYears() * (365/225));
   }
 }
